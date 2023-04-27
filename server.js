@@ -8,6 +8,8 @@ import fs from 'fs'
 
 // Require minimist module (make sure you install this one via npm).
 
+import minimist from 'minimist'
+
 // Use minimist to process one argument `--port=` on the command line after `node server.js`.
 
 // Define a const `port` using the argument from the command line. 
