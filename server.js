@@ -33,6 +33,9 @@ const server = http.createServer((req, res) => {
     res.end('Hello World\n');
   });
 
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
 
 // Use the fs module to create an arrow function using `fs.readFile`.
 // Use the documentation for the Node.js `fs` module. 
