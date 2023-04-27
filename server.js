@@ -14,12 +14,25 @@ import minimist from 'minimist'
 
 var args = minimist(process.argv.slice(2))
 
+
+
+
+
+// Define a const `port` using the argument from the command line. 
+// Make this const default to port 3000 if there is no argument given for `--port`.
+
 const port = args['port'] || 3000
 
 console.log(port)
 
-// Define a const `port` using the argument from the command line. 
-// Make this const default to port 3000 if there is no argument given for `--port`.
+const hostname = '127.0.0.1';
+
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello World\n');
+  });
+
 
 // Use the fs module to create an arrow function using `fs.readFile`.
 // Use the documentation for the Node.js `fs` module. 
