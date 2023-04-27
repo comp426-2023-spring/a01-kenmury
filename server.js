@@ -1,6 +1,10 @@
 // Require http module
 
+import http from 'http'
+
 // Require fs module
+
+import fs from 'fs'
 
 // Require minimist module (make sure you install this one via npm).
 
