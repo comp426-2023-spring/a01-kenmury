@@ -1,6 +1,6 @@
 {
-  "name": "webserver",
-  "version": "1.0.0",
+  "name": "a01-kenmury",
+  "version": "0.0.1",
   "description": "This assignment will help you get started working with Node.js by hacking your way through creating a webserver from scratch.",
   "main": "server.js",
   "scripts": {
