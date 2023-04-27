@@ -16,7 +16,7 @@ var args = minimist(process.argv.slice(2))
 
 const port = args['port'] || 3000
 
-console.log(args['port'])
+console.log(port)
 
 // Define a const `port` using the argument from the command line. 
 // Make this const default to port 3000 if there is no argument given for `--port`.
