@@ -30,7 +30,7 @@ const hostname = '127.0.0.1';
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World\n');
+    res.end("hi");
   });
 
 server.listen(port, hostname, () => {
@@ -45,7 +45,16 @@ server.listen(port, hostname, () => {
 // If there is an error, put it on the console error and return. 
 // Do not be nice about exiting.
 
+fs.readFile('./public/index.html', 'utf8', (err, data) => {
+    if (err) {
+        console.error(err)
+        return;
+    }
 
+    const server = http.createServer((req, res) => {
+        
+    });
+});
 
 
 
